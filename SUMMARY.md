@@ -3,7 +3,7 @@
 * [介绍](README.md)
 * [Shell编程](shell.md)
 * [Gitlab部署](gitlabbu-shu.md)
-* 持续集成
+* [持续集成](chi-xu-ji-cheng.md)
 
 ## Docker
 
