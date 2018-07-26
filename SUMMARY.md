@@ -2,8 +2,10 @@
 
 * [介绍](README.md)
 * [Shell编程](shell.md)
+* Gitlab部署
+* 持续集成
 
 ## Docker
 
-* [Docker学习](dockerxue-xi.md)
+* [Docker入门](dockerxue-xi.md)
 
