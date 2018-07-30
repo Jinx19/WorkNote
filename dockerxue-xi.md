@@ -21,11 +21,17 @@ Docker 的接口相当简单，用户可以方便地创建和使用容器，把�
 
 参考视频：[https://www.youtube.com/watch?v=YFl2mCHdv24](https://www.youtube.com/watch?v=YFl2mCHdv24)
 
-参考文章:http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
+参考文章:[http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 
+# Docker相关概念
 
+## Image 文件
 
+Docker 把应用程序及其依赖，打包在 image 文件里面。Docker 根据 image 文件生成容器的实例。同一个 image 文件，可以生成多个同时运行的容器实例。
 
+实际开发中，一个 image 文件往往通过继承另一个 image 文件。
+
+为了方便共享，image 文件制作完成后，可以上传到网上的仓库。Docker 的官方仓库[Docker Hub](https://hub.docker.com/)是最重要、最常用的 image 仓库。
 
 
 
