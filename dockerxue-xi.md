@@ -19,7 +19,13 @@ Docker属于Linux容器的一种封装，提供简单易用的容器使用接口
 
 Docker 的接口相当简单，用户可以方便地创建和使用容器，把自己的应用放入容器。容器还可以进行版本管理、复制、分享、修改，就像管理普通的代码一样。
 
-可以看这个视频：https://www.youtube.com/watch?v=YFl2mCHdv24
+参考视频：[https://www.youtube.com/watch?v=YFl2mCHdv24](https://www.youtube.com/watch?v=YFl2mCHdv24)
+
+参考文章:http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html
+
+
+
+
 
 
 
