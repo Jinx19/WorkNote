@@ -50,14 +50,25 @@ image 文件生成的容器实例，本身也是一个文件，称为容器文�
 INSTRUCTION arguments
 ```
 
-FROM
+#### FROM
 
 > 指定基础镜像 base image
 >
 > Dockerfile必需以FROM 指令开始。
 
-* URL : Git仓库地址
-* PATH : 本地文件目录
+```
+FROM <image> [AS <name>]
+
+Or
+
+FROM <image>[:<tag>] [AS <name>]
+
+Or
+
+FROM <image>[@<digest>] [AS <name>]
+```
+
+
 
 #### RUN
 
