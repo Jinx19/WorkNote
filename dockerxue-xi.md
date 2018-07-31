@@ -41,11 +41,20 @@ image 文件生成的容器实例，本身也是一个文件，称为容器文�
 
 ## Dockerfile文件
 
-学会使用 image 文件以后，接下来的问题就是，如何可以生成 image 文件？如果你要推广自己的软件，势必要自己制作 image 文件。这就需要用到 Dockerfile 文件。它是一个文本文件，用来配置 image。Docker 根据 该文件生成二进制的 image 文件。
+学会使用 image 文件以后，接下来的问题就是，如何可以生成 image 文件？如果你要推广自己的软件，势必要自己制作 image 文件。这就需要用到 Dockerfile 文件。它是一个文本文件，用来配置 image。Docker 根据 该文件生成二进制的 image 文件。Dockerfile 逐行执行命令。Docker会重用cache,尤其在docker build时。
 
-### FROM
+## Dockerfile格式及相关命令
 
-> 指定基本镜像
+```
+#Comment
+INSTRUCTION arguments
+```
+
+#### Dockerfile必需以FROM 指令开始。
+
+#### FROM
+
+> 指定基础镜像 base image
 
 * URL : Git仓库地址
 * PATH : 本地文件目录
