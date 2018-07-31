@@ -82,9 +82,9 @@ RUN <command> (shell form)
 
 Dockerfile文件只能有一个CMD指令。为容器指定一些默认指令。
 
-* `CMD ["executable","param1","param2"]`\(_exec_form, this is the preferred form\)
+* `CMD ["executable","param1","param2"]`\(\_exec\_form, this is the preferred form\)
 * `CMD ["param1","param2"]`\(as _default parameters to ENTRYPOINT_\)
-* `CMD command param1 param2`\(_shell _form\)
+* `CMD command param1 param2`\(\_shell \_form\)
 
 #### LABEL
 
@@ -94,6 +94,22 @@ Dockerfile文件只能有一个CMD指令。为容器指定一些默认指令。
 LABEL "com.example.vendor"="ACME Incorporated"
 LABEL com.example.label-with-value="foo"
 LABEL version="1.0"
+```
+
+#### EXPOSE
+
+```
+EXPOSE <port> [<port>/<protocol>...]
+```
+
+指定容器监听设置的网络端口。
+
+#### ENV
+
+```
+环境变量
+ENV <key> <value>
+ENV <key>=<value>...
 ```
 
 
