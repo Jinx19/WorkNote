@@ -23,7 +23,7 @@ Docker 的接口相当简单，用户可以方便地创建和使用容器，把�
 
 参考文章:[http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)
 
-参考文章:https://yeasy.gitbooks.io/docker\_practice/image/build.html
+参考文章:[https://yeasy.gitbooks.io/docker\_practice/image/build.html](https://yeasy.gitbooks.io/docker_practice/image/build.html)
 
 # Docker相关文件
 
@@ -46,8 +46,6 @@ image 文件生成的容器实例，本身也是一个文件，称为容器文�
 ### FROM
 
 > 指定基本镜像
-
-
 
 
 
