@@ -75,13 +75,26 @@ FROM前面可以加ARG,但ARG不能被FROM后面任何命令使用
 ```
 RUN <command> (shell form)
 ```
+
 可以使用\来连接shell命令
 
 #### CMD
 
+Dockerfile文件只能有一个CMD指令。为容器指定一些默认指令。
+
+* `CMD ["executable","param1","param2"]`\(_exec_form, this is the preferred form\)
+* `CMD ["param1","param2"]`\(as _default parameters to ENTRYPOINT_\)
+* `CMD command param1 param2`\(_shell _form\)
+
 #### LABEL
 
-#### 
+添加元数据。key-value对。
+
+```
+LABEL "com.example.vendor"="ACME Incorporated"
+LABEL com.example.label-with-value="foo"
+LABEL version="1.0"
+```
 
 
 
