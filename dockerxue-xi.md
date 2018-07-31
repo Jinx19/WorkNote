@@ -59,7 +59,15 @@ INSTRUCTION arguments
 * URL : Git仓库地址
 * PATH : 本地文件目录
 
+#### RUN
 
+
+
+#### CMD
+
+#### LABEL
+
+#### 
 
 
 
