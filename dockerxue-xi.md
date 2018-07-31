@@ -72,6 +72,11 @@ FROM前面可以加ARG,但ARG不能被FROM后面任何命令使用
 
 #### RUN
 
+```
+RUN <command> (shell form)
+```
+可以使用\来连接shell命令
+
 #### CMD
 
 #### LABEL
