@@ -112,5 +112,24 @@ ENV <key> <value>
 ENV <key>=<value>...
 ```
 
+#### ADD
+
+```
+ADD [--chown=<user>:<group>] <src>...<dest>
+ADD [--chown=<user>:<group>] ["<src>,...<dest>"]
+```
+
+ADD指令将&lt;src&gt;的文件，目录或远端文件url复制到镜像中的&lt;dest&gt;目录下
+
+```
+ADD hom* /mydir/        # adds all files starting with "hom"
+```
+
+#### COPY
+
+和add类似，但不能复制url文件
+
+
+
 
 
