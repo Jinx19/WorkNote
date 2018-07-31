@@ -68,7 +68,7 @@ Or
 FROM <image>[@<digest>] [AS <name>]
 ```
 
-
+FROM前面可以加ARG,但ARG不能被FROM后面任何命令使用
 
 #### RUN
 
