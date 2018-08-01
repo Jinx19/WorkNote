@@ -1,8 +1,6 @@
 # Summary
 
 * [介绍](README.md)
-* [Shell编程](shell.md)
-* [Gitlab部署](gitlabbu-shu.md)
 * [持续集成](chi-xu-ji-cheng.md)
 
 ## Docker
@@ -13,4 +11,12 @@
 ## Git
 
 * [Git命令](git/gitming-ling.md)
+
+## Gitlab
+
+* [Gitlab部署](gitlabbu-shu.md)
+
+## Linux命令
+
+* [Shell编程](shell.md)
 
