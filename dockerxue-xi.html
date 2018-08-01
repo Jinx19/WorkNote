@@ -1,0 +1,400 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Docker入门 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dockerchang-yong-ming-ling.html" />
+    
+    
+    <link rel="prev" href="chi-xu-ji-cheng.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shell.html">
+            
+                <a href="shell.html">
+            
+                    
+                    Shell编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="gitlabbu-shu.html">
+            
+                <a href="gitlabbu-shu.html">
+            
+                    
+                    Gitlab部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="chi-xu-ji-cheng.html">
+            
+                <a href="chi-xu-ji-cheng.html">
+            
+                    
+                    持续集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Docker</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="dockerxue-xi.html">
+            
+                <a href="dockerxue-xi.html">
+            
+                    
+                    Docker入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="dockerchang-yong-ming-ling.html">
+            
+                <a href="dockerchang-yong-ming-ling.html">
+            
+                    
+                    Docker常用命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Git</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="git/gitming-ling.html">
+            
+                <a href="git/gitming-ling.html">
+            
+                    
+                    Git命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Docker入门</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="docker&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;">Docker&#x89E3;&#x51B3;&#x7684;&#x95EE;&#x9898;</h1>
+<ul>
+<li>&#x73AF;&#x5883;&#x914D;&#x7F6E;<blockquote>
+<p>&#x73AF;&#x5883;&#x914D;&#x7F6E;&#x5982;&#x6B64;&#x9EBB;&#x70E6;&#xFF0C;&#x6362;&#x4E00;&#x53F0;&#x673A;&#x5668;&#xFF0C;&#x5C31;&#x8981;&#x91CD;&#x6765;&#x4E00;&#x6B21;&#xFF0C;&#x65F7;&#x65E5;&#x8D39;&#x65F6;&#x3002;&#x5F88;&#x591A;&#x4EBA;&#x60F3;&#x5230;&#xFF0C;&#x80FD;&#x4E0D;&#x80FD;&#x4ECE;&#x6839;&#x672C;&#x4E0A;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x8F6F;&#x4EF6;&#x53EF;&#x4EE5;&#x5E26;&#x73AF;&#x5883;&#x5B89;&#x88C5;&#xFF1F;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5B89;&#x88C5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x628A;&#x539F;&#x59CB;&#x73AF;&#x5883;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x5730;&#x590D;&#x5236;&#x8FC7;&#x6765;&#x3002;</p>
+</blockquote>
+</li>
+</ul>
+<p>&#x53EF;&#x4EE5;&#x7528;&#x865A;&#x62DF;&#x673A;&#x89E3;&#x51B3;&#xFF0C;&#x4F46;&#x4F7F;&#x7528;&#x865A;&#x62DF;&#x673A;&#x8FD8;&#x539F;&#x8F6F;&#x4EF6;&#x7684;&#x539F;&#x59CB;&#x73AF;&#x5883;&#x6709;&#x4EE5;&#x4E0B;&#x7F3A;&#x70B9;</p>
+<ol>
+<li>&#x8D44;&#x6E90;&#x5360;&#x7528;&#x591A;</li>
+<li>&#x5197;&#x4F59;&#x6B65;&#x9AA4;&#x591A;</li>
+<li>&#x542F;&#x52A8;&#x6162;</li>
+</ol>
+<h1 id="docker&#x539F;&#x7406;">Docker&#x539F;&#x7406;</h1>
+<p>Linux&#x5BB9;&#x5668; Linux Containers,LXC</p>
+<blockquote>
+<p>&#x5BB9;&#x5668;&#x6709;&#x70B9;&#x50CF;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x5316;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x4F46;&#x662F;&#x6210;&#x672C;&#x5F00;&#x9500;&#x5C0F;&#x5F97;&#x591A;</p>
+</blockquote>
+<p>Docker&#x5C5E;&#x4E8E;Linux&#x5BB9;&#x5668;&#x7684;&#x4E00;&#x79CD;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x6613;&#x7528;&#x7684;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x3002;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684;Linux&#x5BB9;&#x5668;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<p>Docker &#x7684;&#x63A5;&#x53E3;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#xFF0C;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;&#x653E;&#x5165;&#x5BB9;&#x5668;&#x3002;&#x5BB9;&#x5668;&#x8FD8;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x3001;&#x590D;&#x5236;&#x3001;&#x5206;&#x4EAB;&#x3001;&#x4FEE;&#x6539;&#xFF0C;&#x5C31;&#x50CF;&#x7BA1;&#x7406;&#x666E;&#x901A;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x6837;&#x3002;</p>
+<p>&#x53C2;&#x8003;&#x89C6;&#x9891;&#xFF1A;<a href="https://www.youtube.com/watch?v=YFl2mCHdv24" target="_blank">https://www.youtube.com/watch?v=YFl2mCHdv24</a></p>
+<p>&#x53C2;&#x8003;&#x6587;&#x7AE0;:<a href="http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html" target="_blank">http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html</a></p>
+<p>&#x53C2;&#x8003;&#x6587;&#x7AE0;:<a href="https://yeasy.gitbooks.io/docker_practice/image/build.html" target="_blank">https://yeasy.gitbooks.io/docker_practice/image/build.html</a></p>
+<h1 id="docker&#x76F8;&#x5173;&#x6587;&#x4EF6;">Docker&#x76F8;&#x5173;&#x6587;&#x4EF6;</h1>
+<h2 id="image-&#x6587;&#x4EF6;">Image &#x6587;&#x4EF6;</h2>
+<p>Docker &#x628A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x53CA;&#x5176;&#x4F9D;&#x8D56;&#xFF0C;&#x6253;&#x5305;&#x5728; image &#x6587;&#x4EF6;&#x91CC;&#x9762;&#x3002;Docker &#x6839;&#x636E; image &#x6587;&#x4EF6;&#x751F;&#x6210;&#x5BB9;&#x5668;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#x540C;&#x4E00;&#x4E2A; image &#x6587;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x591A;&#x4E2A;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x7684;&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x5B9E;&#x9645;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A; image &#x6587;&#x4EF6;&#x5F80;&#x5F80;&#x901A;&#x8FC7;&#x7EE7;&#x627F;&#x53E6;&#x4E00;&#x4E2A; image &#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x5171;&#x4EAB;&#xFF0C;image &#x6587;&#x4EF6;&#x5236;&#x4F5C;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4E0A;&#x4F20;&#x5230;&#x7F51;&#x4E0A;&#x7684;&#x4ED3;&#x5E93;&#x3002;Docker &#x7684;&#x5B98;&#x65B9;&#x4ED3;&#x5E93;<a href="https://hub.docker.com/" target="_blank">Docker Hub</a>&#x662F;&#x6700;&#x91CD;&#x8981;&#x3001;&#x6700;&#x5E38;&#x7528;&#x7684; image &#x4ED3;&#x5E93;&#x3002;</p>
+<h2 id="container&#x6587;&#x4EF6;">Container&#x6587;&#x4EF6;</h2>
+<p>image &#x6587;&#x4EF6;&#x751F;&#x6210;&#x7684;&#x5BB9;&#x5668;&#x5B9E;&#x4F8B;&#xFF0C;&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x79F0;&#x4E3A;&#x5BB9;&#x5668;&#x6587;&#x4EF6;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4E00;&#x65E6;&#x5BB9;&#x5668;&#x751F;&#x6210;&#xFF0C;&#x5C31;&#x4F1A;&#x540C;&#x65F6;&#x5B58;&#x5728;&#x4E24;&#x4E2A;&#x6587;&#x4EF6;&#xFF1A; image &#x6587;&#x4EF6;&#x548C;&#x5BB9;&#x5668;&#x6587;&#x4EF6;&#x3002;</p>
+<h2 id="dockerfile&#x6587;&#x4EF6;">Dockerfile&#x6587;&#x4EF6;</h2>
+<p>&#x5B66;&#x4F1A;&#x4F7F;&#x7528; image &#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x95EE;&#x9898;&#x5C31;&#x662F;&#xFF0C;&#x5982;&#x4F55;&#x53EF;&#x4EE5;&#x751F;&#x6210; image &#x6587;&#x4EF6;&#xFF1F;&#x5982;&#x679C;&#x4F60;&#x8981;&#x63A8;&#x5E7F;&#x81EA;&#x5DF1;&#x7684;&#x8F6F;&#x4EF6;&#xFF0C;&#x52BF;&#x5FC5;&#x8981;&#x81EA;&#x5DF1;&#x5236;&#x4F5C; image &#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x5C31;&#x9700;&#x8981;&#x7528;&#x5230; Dockerfile &#x6587;&#x4EF6;&#x3002;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x6587;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6765;&#x914D;&#x7F6E; image&#x3002;Docker &#x6839;&#x636E; &#x8BE5;&#x6587;&#x4EF6;&#x751F;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x7684; image &#x6587;&#x4EF6;&#x3002;Dockerfile &#x9010;&#x884C;&#x6267;&#x884C;&#x547D;&#x4EE4;&#x3002;Docker&#x4F1A;&#x91CD;&#x7528;cache,&#x5C24;&#x5176;&#x5728;docker build&#x65F6;&#x3002;</p>
+<h3 id="dockerfile&#x683C;&#x5F0F;&#x53CA;&#x76F8;&#x5173;&#x547D;&#x4EE4;">Dockerfile&#x683C;&#x5F0F;&#x53CA;&#x76F8;&#x5173;&#x547D;&#x4EE4;</h3>
+<pre><code>#Comment
+INSTRUCTION arguments
+</code></pre><h4 id="from">FROM</h4>
+<blockquote>
+<p>&#x6307;&#x5B9A;&#x57FA;&#x7840;&#x955C;&#x50CF; base image</p>
+<p>Dockerfile&#x5FC5;&#x9700;&#x4EE5;FROM &#x6307;&#x4EE4;&#x5F00;&#x59CB;&#x3002;</p>
+</blockquote>
+<pre><code>FROM &lt;image&gt; [AS &lt;name&gt;]
+
+Or
+
+FROM &lt;image&gt;[:&lt;tag&gt;] [AS &lt;name&gt;]
+
+Or
+
+FROM &lt;image&gt;[@&lt;digest&gt;] [AS &lt;name&gt;]
+</code></pre><p>FROM&#x524D;&#x9762;&#x53EF;&#x4EE5;&#x52A0;ARG,&#x4F46;ARG&#x4E0D;&#x80FD;&#x88AB;FROM&#x540E;&#x9762;&#x4EFB;&#x4F55;&#x547D;&#x4EE4;&#x4F7F;&#x7528;</p>
+<h4 id="run">RUN</h4>
+<pre><code>RUN &lt;command&gt; (shell form)
+</code></pre><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;\&#x6765;&#x8FDE;&#x63A5;shell&#x547D;&#x4EE4;</p>
+<h4 id="cmd">CMD</h4>
+<p>Dockerfile&#x6587;&#x4EF6;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;CMD&#x6307;&#x4EE4;&#x3002;&#x4E3A;&#x5BB9;&#x5668;&#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x9ED8;&#x8BA4;&#x6307;&#x4EE4;&#x3002;</p>
+<ul>
+<li><code>CMD [&quot;executable&quot;,&quot;param1&quot;,&quot;param2&quot;]</code>(_exec_form, this is the preferred form)</li>
+<li><code>CMD [&quot;param1&quot;,&quot;param2&quot;]</code>(as <em>default parameters to ENTRYPOINT</em>)</li>
+<li><code>CMD command param1 param2</code>(_shell _form)</li>
+</ul>
+<h4 id="label">LABEL</h4>
+<p>&#x6DFB;&#x52A0;&#x5143;&#x6570;&#x636E;&#x3002;key-value&#x5BF9;&#x3002;</p>
+<pre><code>LABEL &quot;com.example.vendor&quot;=&quot;ACME Incorporated&quot;
+LABEL com.example.label-with-value=&quot;foo&quot;
+LABEL version=&quot;1.0&quot;
+</code></pre><h4 id="expose">EXPOSE</h4>
+<pre><code>EXPOSE &lt;port&gt; [&lt;port&gt;/&lt;protocol&gt;...]
+</code></pre><p>&#x6307;&#x5B9A;&#x5BB9;&#x5668;&#x76D1;&#x542C;&#x8BBE;&#x7F6E;&#x7684;&#x7F51;&#x7EDC;&#x7AEF;&#x53E3;&#x3002;</p>
+<h4 id="env">ENV</h4>
+<pre><code>&#x73AF;&#x5883;&#x53D8;&#x91CF;
+ENV &lt;key&gt; &lt;value&gt;
+ENV &lt;key&gt;=&lt;value&gt;...
+</code></pre><h4 id="add">ADD</h4>
+<pre><code>ADD [--chown=&lt;user&gt;:&lt;group&gt;] &lt;src&gt;...&lt;dest&gt;
+ADD [--chown=&lt;user&gt;:&lt;group&gt;] [&quot;&lt;src&gt;,...&lt;dest&gt;&quot;]
+</code></pre><p>ADD&#x6307;&#x4EE4;&#x5C06;&lt;src&gt;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x76EE;&#x5F55;&#x6216;&#x8FDC;&#x7AEF;&#x6587;&#x4EF6;url&#x590D;&#x5236;&#x5230;&#x955C;&#x50CF;&#x4E2D;&#x7684;&lt;dest&gt;&#x76EE;&#x5F55;&#x4E0B;</p>
+<pre><code>ADD hom* /mydir/        # adds all files starting with &quot;hom&quot;
+</code></pre><h4 id="copy">COPY</h4>
+<p>&#x548C;add&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x4E0D;&#x80FD;&#x590D;&#x5236;url&#x6587;&#x4EF6;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chi-xu-ji-cheng.html" class="navigation navigation-prev " aria-label="Previous page: 持续集成">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dockerchang-yong-ming-ling.html" class="navigation navigation-next " aria-label="Next page: Docker常用命令">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Docker入门","level":"2.1","depth":1,"next":{"title":"Docker常用命令","level":"2.2","depth":1,"path":"dockerchang-yong-ming-ling.md","ref":"dockerchang-yong-ming-ling.md","articles":[]},"previous":{"title":"持续集成","level":"1.4","depth":1,"path":"chi-xu-ji-cheng.md","ref":"chi-xu-ji-cheng.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dockerxue-xi.md","mtime":"2018-08-01T13:38:46.878Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-01T13:39:12.398Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
