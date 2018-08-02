@@ -1,7 +1,7 @@
 # Git 命令
 
-```git add -i```
-```git status 查看改动状态```
+``git add -i``
+``git status 查看改动状态``
 
 
 
