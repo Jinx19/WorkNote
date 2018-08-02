@@ -13,6 +13,6 @@
 
 * [Git入门](git/gityuan-li.md)
   * [Git起步](/git/gityuan-li.md#git起步)
-* [Git高阶](git/git-advanced)
+* [Git高阶](git/git-advanced.md)
 * [Gitlab部署](gitlabbu-shu.md)
 
