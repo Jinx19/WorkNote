@@ -1,12 +1,12 @@
 # Summary
 
 * [介绍](README.md)
-* [持续集成](chi-xu-ji-cheng.md)
 
 ## Docker
 
-* [Docker入门](dockerxue-xi.md)
 * [Docker常用命令](dockerchang-yong-ming-ling.md)
+* [Docker入门](dockerxue-xi.md)
+  * [Docker原理](/dockerxue-xi.md#docker原理)
 
 ## Git学习
 
