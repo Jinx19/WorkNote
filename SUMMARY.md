@@ -10,8 +10,8 @@
 
 ## Git学习
 
-* [Git](git/gityuan-li.md)入门
-  * Git起步
+* [Git入门](git/gityuan-li.md)
+  * [Git起步](git/gityuan-li/gitqi-bu.md)
 * [Git高阶](git/gitming-ling.md)
 
 ## Gitlab
