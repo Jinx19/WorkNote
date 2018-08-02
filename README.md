@@ -2,7 +2,7 @@
 
 工作记录
 
-https://jinx19.gitbook.io/worknote/
+[https://jinx19.gitbook.io/worknote/](https://jinx19.gitbook.io/worknote/)
 
 
 

@@ -10,6 +10,7 @@
 
 ## Git
 
+* [Git原理](git/gityuan-li.md)
 * [Git命令](git/gitming-ling.md)
 
 ## Gitlab
