@@ -18,9 +18,3 @@
 
 * [Gitlab部署](gitlabbu-shu.md)
 
-## Linux命令
-
-* [Shell编程](shell.md)
-
-
-
