@@ -8,10 +8,10 @@
 * [Docker入门](dockerxue-xi.md)
 * [Docker常用命令](dockerchang-yong-ming-ling.md)
 
-## Git
+## Git学习
 
-* [Git原理](git/gityuan-li.md)
-* [Git命令](git/gitming-ling.md)
+* [Git起步](git/gityuan-li.md)
+* [Git高阶](git/gitming-ling.md)
 
 ## Gitlab
 
