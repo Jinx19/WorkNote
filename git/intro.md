@@ -30,6 +30,8 @@ Git的三个工作区域：Git仓库,工作目录，暂存区域
 
 ![](/assets/1*zw0bLFWkaAP2QPfhxkoDEA.png)
 
+## Git中的HEAD是什么
+
 ## 获得帮助
 
 ```
