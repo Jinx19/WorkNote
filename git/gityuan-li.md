@@ -1,4 +1,4 @@
-# Git基础
+# Git起步
 
 > 直接记录快照，而非差异比较
 
@@ -31,8 +31,6 @@ Git的三个工作区域：Git仓库,工作目录，暂存区域
 ### ![](/assets/1*zw0bLFWkaAP2QPfhxkoDEA.png)
 
 获得帮助
-
-
 
 ### 
 
