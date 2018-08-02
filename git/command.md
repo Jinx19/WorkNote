@@ -1,6 +1,6 @@
 # Git 命令
 
-## git diff
+```git add -i```
 
 
 参考:
