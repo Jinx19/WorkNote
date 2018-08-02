@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Docker常用命令 · GitBook</title>
+        <title>Docker 命令 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="../gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
             
                 
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
@@ -57,10 +61,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="dockerchang-yong-ming-ling.html" />
+    <link rel="next" href="../git/intro.html" />
     
     
-    <link rel="prev" href="../" />
+    <link rel="prev" href="advance.html" />
     
 
     </head>
@@ -82,7 +86,16 @@
 <ul class="summary">
     
     
+    
+        
+        <li>
+            <a href="http://Jinx19.github.io" target="_blank" class="custom-link">Jinx19's Blog</a>
+        </li>
+    
+    
 
+    
+    <li class="divider"></li>
     
 
     
@@ -94,7 +107,7 @@
                 <a href="../">
             
                     
-                    Overview
+                    OverView
             
                 </a>
             
@@ -109,26 +122,38 @@
         
         
     
-        <li class="chapter active" data-level="2.1" data-path="dockerchang-yong-ming-ling.html">
+        <li class="chapter " data-level="2.1" data-path="intro.html">
             
-                <a href="dockerchang-yong-ming-ling.html">
+                <a href="intro.html">
             
                     
-                    Docker常用命令
+                    Docker 入门
             
                 </a>
             
 
             
-            <ul class="articles">
-                
+        </li>
     
-        <li class="chapter " data-level="2.1.1" data-path="dockerchang-yong-ming-ling.html">
+        <li class="chapter " data-level="2.2" data-path="advance.html">
             
-                <a href="dockerchang-yong-ming-ling.html#build">
+                <a href="advance.html">
             
                     
-                    Build命令
+                    Docker 进阶
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="command.html">
+            
+                <a href="command.html">
+            
+                    
+                    Docker 命令
             
                 </a>
             
@@ -137,30 +162,18 @@
         </li>
     
 
-            </ul>
-            
-        </li>
     
-        <li class="chapter " data-level="2.2" data-path="dockerxue-xi.html">
+        
+        <li class="header">Git</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../git/intro.html">
             
-                <a href="dockerxue-xi.html">
+                <a href="../git/intro.html">
             
                     
-                    Docker入门
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.2.1" data-path="dockerxue-xi.html">
-            
-                <a href="dockerxue-xi.html#docker原理">
-            
-                    
-                    Docker原理
+                    Git 入门
             
                 </a>
             
@@ -168,38 +181,45 @@
             
         </li>
     
+        <li class="chapter " data-level="3.2" data-path="../git/advance.html">
+            
+                <a href="../git/advance.html">
+            
+                    
+                    Git 进阶
+            
+                </a>
+            
 
-            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../git/command.html">
+            
+                <a href="../git/command.html">
+            
+                    
+                    Git 命令
+            
+                </a>
+            
+
             
         </li>
     
 
     
         
-        <li class="header">Git学习</li>
+        <li class="header">Linux</li>
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../git/gitru-men.html">
+        <li class="chapter " data-level="4.1" data-path="../linux/intro.html">
             
-                <a href="../git/gitru-men.html">
-            
-                    
-                    Git入门
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="3.1.1" data-path="../git/gitru-men.html">
-            
-                <a href="../git/gitru-men.html#git起步">
+                <a href="../linux/intro.html">
             
                     
-                    Git起步
+                    Linux 入门
             
                 </a>
             
@@ -207,8 +227,29 @@
             
         </li>
     
+        <li class="chapter " data-level="4.2" data-path="../linux/advance.html">
+            
+                <a href="../linux/advance.html">
+            
+                    
+                    Linux 进阶
+            
+                </a>
+            
 
-            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../linux/command.html">
+            
+                <a href="../linux/command.html">
+            
+                    
+                    Linux 命令
+            
+                </a>
+            
+
             
         </li>
     
@@ -242,7 +283,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Docker常用命令</a>
+        <a href=".." >Docker 命令</a>
     </h1>
 </div>
 
@@ -257,7 +298,8 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <pre><code>Usage:    docker COMMAND
+                                <h1 id="docker-&#x547D;&#x4EE4;">Docker &#x547D;&#x4EE4;</h1>
+<pre><code>Usage:    docker COMMAND
 
 A self-sufficient runtime for containers
 
@@ -330,7 +372,7 @@ Commands:
   update      Update configuration of one or more containers
   version     Show the Docker version information
   wait        Block until one or more containers stop, then print their exit codes
-</code></pre><h1 id="build">Build</h1>
+</code></pre><h2 id="build">Build</h2>
 <pre><code>docker build
 </code></pre><p>&#x6839;&#x636E;Dockerfile&#x751F;&#x6210;&#x955C;&#x50CF;&#x6587;&#x4EF6;</p>
 <ul>
@@ -366,12 +408,12 @@ Commands:
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Overview">
+                <a href="advance.html" class="navigation navigation-prev " aria-label="Previous page: Docker 进阶">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="dockerchang-yong-ming-ling.html#build" class="navigation navigation-next " aria-label="Next page: Build命令">
+                <a href="../git/intro.html" class="navigation navigation-next " aria-label="Next page: Git 入门">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -382,7 +424,7 @@ Commands:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker常用命令","level":"2.1","depth":1,"next":{"title":"Build命令","level":"2.1.1","depth":2,"anchor":"#build","path":"docker/dockerchang-yong-ming-ling.md","ref":"docker/dockerchang-yong-ming-ling.md#build","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"docker/dockerchang-yong-ming-ling.md","mtime":"2018-08-02T06:16:42.214Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-02T06:17:14.583Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker 命令","level":"2.3","depth":1,"next":{"title":"Git 入门","level":"3.1","depth":1,"path":"git/intro.md","ref":"git/intro.md","articles":[]},"previous":{"title":"Docker 进阶","level":"2.2","depth":1,"path":"docker/advance.md","ref":"docker/advance.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Jinx19's Blog":"http://Jinx19.github.io"}},"gitbook":"*"},"file":{"path":"docker/command.md","mtime":"2018-08-02T07:06:04.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-02T07:06:45.711Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -390,6 +432,10 @@ Commands:
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
