@@ -10,7 +10,7 @@
 
 ## DevOps
 
-* [CI](devops/ci.md)
+* [CI/CD](devops/ci.md)
 
 ## Git
 
@@ -24,8 +24,4 @@
 * [Linux 入门](linux/intro.md)
 * [Linux 进阶](linux/advance.md)
 * [Linux 命令](linux/command.md)
-
-## 
-
-
 
