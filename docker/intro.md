@@ -1,4 +1,4 @@
-# Docker 入门
+# sDocker 入门
 
 # Docker解决的问题
 
@@ -13,11 +13,29 @@
 
 # Docker原理
 
-Linux容器 Linux Containers,LXC
+容器是一种轻量级虚拟化。
 
 > 容器有点像轻量级的虚拟机，能够提供虚拟化的环境，但是成本开销小得多
 
-Docker属于Linux容器的一种封装，提供简单易用的容器使用接口。目前最流行的Linux容器解决方案。
+Docker属于Linux容器 Linux Containers,LXC的一种封装，提供简单易用的容器使用接口。目前最流行的Linux容器解决方案。
+
+> Docker,Build,Ship and Run Any App,Anywhere 一次封装，到处运行。
+
+Docker为应用的开发、运行和部署提供一站式的解决方案。
+
+## 容器技术
+
+![](/assets/virtual-private-cloud-with-container-technologies-for-devops-9-638.jpg)
+
+## Docker 与虚拟机的比较
+
+|  | Docker | 虚拟机 |
+| :--- | :--- | :--- |
+| 速度 | 启动和停止秒级实现 | 需要数分钟 |
+| 资源 | 资源需求很少,一台主机可以同时运行数千个Docker容器 |  |
+| 版本控制 | Docker通过类似Git设计理念，方便用户获取、分发和更新应用镜像，存储复用。 |  |
+| 创建 | 可以通过Dockerfile灵活自动化创建和部署，提高工作效率。 |  |
+| 消耗 | Docker除了运行其中应用外,基本不消耗额外的系统资源，保证应用性能的同时，尽量减少系统开销。 | 运行N个不同的应用 |
 
 Docker 的接口相当简单，用户可以方便地创建和使用容器，把自己的应用放入容器。容器还可以进行版本管理、复制、分享、修改，就像管理普通的代码一样。
 
@@ -130,8 +148,4 @@ ADD hom* /mydir/        # adds all files starting with "hom"
 #### COPY
 
 和add类似，但不能复制url文件
-
-
-
-
 
