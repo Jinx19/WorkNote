@@ -28,5 +28,11 @@ CI的主分支的不提交代码。团队可以利用Git等版本控制系统来
 
 持续交付有时与持续部署混淆。有些人甚至把这两个词互换使用。区别在于，在持续部署下，我们将通过一系列测试的任何更改部署到生产中。相反，在持续交付的情况下，我们确保软件可以在任何时候可靠地发布，但何时发布由人决定，通常是基于业务原因。为了进行持续的部署，必须进行持续的交付。
 
-                   ![](/assets/continuous-delivery-versus-continuous-deployment.png)
+![](/assets/continuous-delivery-versus-continuous-deployment.png)
+
+
+
+
+
+
 
