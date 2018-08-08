@@ -12,15 +12,13 @@ CI的主分支的不提交代码。团队可以利用Git等版本控制系统来
 
 > CI能够保证开发进行的正确性,因为当你提交未经过测试的代码,出错的可能性会很大。
 
-![](/assets/CI.png)**常用的集成开发工具**
+![](/assets/CI.png)
 
-* jenkins 
+**常用的集成开发工具**
 
-## 
+* jenkins ![](/assets/jenkins-logo-text-768x247.png)
 
-* jenkins
-
-
+* Gitlab CI ![](/assets/wm_no_bg-768x291.png)
 
 * 
 
