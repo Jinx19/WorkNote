@@ -22,7 +22,9 @@ CI的主分支的不提交代码。团队可以利用Git等版本控制系统来
 
 # Continuous Delivery 持续交付 {#firstHeading}
 
+持续交付\(Continuous delivery, CD\)是一种软件工程方法，在这种方法中，团队在短周期内生产软件，确保软件可以在任何时候可靠地发布。它的目标是以更快的速度和频率构建、测试和发布软件。通过允许对生产中的应用程序进行更多增量更新，这种方法有助于降低交付更改的成本、时间和风险。一个简单且可重复的部署过程对于持续交付非常重要。
 
+                ![](/assets/Continuous_Delivery_process_diagram.svg.png)
 
 
 
