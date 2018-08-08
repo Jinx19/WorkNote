@@ -11,6 +11,7 @@
 ## DevOps
 
 * [CI/CD](devops/ci.md)
+* [GitLab CI](devops/gitlab-ci.md)
 
 ## Git
 

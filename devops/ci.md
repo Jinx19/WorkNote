@@ -1,4 +1,4 @@
-# Continuous Integration 持续开发
+# Continuous Integration 持续集成
 
 在团队开发中,每天开发人员可能会多次向公共代码仓库提交代码,那么每天可能会产生多次merge。
 
