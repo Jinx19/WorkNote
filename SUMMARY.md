@@ -8,6 +8,10 @@
 * [Docker 进阶](docker/advance.md)
 * [Docker 命令](docker/command.md)
 
+## DevOps
+
+* [CI](devops/ci.md)
+
 ## Git
 
 * [Git 入门](git/intro.md)
@@ -21,7 +25,7 @@
 * [Linux 进阶](linux/advance.md)
 * [Linux 命令](linux/command.md)
 
-## DevOps
+## 
 
-* [CI](devops/ci.md)
+
 
