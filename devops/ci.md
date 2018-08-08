@@ -20,6 +20,5 @@ CI的主分支的不提交代码。团队可以利用Git等版本控制系统来
 
 * Gitlab CI ![](/assets/wm_no_bg-768x291.png)
 
-* 
 
 
