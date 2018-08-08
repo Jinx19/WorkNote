@@ -164,11 +164,44 @@
 
     
         
+        <li class="header">DevOps</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../devops/ci.html">
+            
+                <a href="../devops/ci.html">
+            
+                    
+                    CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../devops/gitlab-ci.html">
+            
+                <a href="../devops/gitlab-ci.html">
+            
+                    
+                    GitLab CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
         <li class="header">Git</li>
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../git/intro.html">
+        <li class="chapter " data-level="4.1" data-path="../git/intro.html">
             
                 <a href="../git/intro.html">
             
@@ -181,7 +214,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../git/advance.html">
+        <li class="chapter " data-level="4.2" data-path="../git/advance.html">
             
                 <a href="../git/advance.html">
             
@@ -194,12 +227,25 @@
             
         </li>
     
-        <li class="chapter " data-level="3.3" data-path="../git/command.html">
+        <li class="chapter " data-level="4.3" data-path="../git/command.html">
             
                 <a href="../git/command.html">
             
                     
                     Git 命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../git/qanda.html">
+            
+                <a href="../git/qanda.html">
+            
+                    
+                    Q&A
             
                 </a>
             
@@ -214,7 +260,7 @@
         
         
     
-        <li class="chapter " data-level="4.1" data-path="../linux/intro.html">
+        <li class="chapter " data-level="5.1" data-path="../linux/intro.html">
             
                 <a href="../linux/intro.html">
             
@@ -227,7 +273,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="../linux/advance.html">
+        <li class="chapter " data-level="5.2" data-path="../linux/advance.html">
             
                 <a href="../linux/advance.html">
             
@@ -240,7 +286,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="../linux/command.html">
+        <li class="chapter " data-level="5.3" data-path="../linux/command.html">
             
                 <a href="../linux/command.html">
             
@@ -313,11 +359,100 @@
 <li>&#x542F;&#x52A8;&#x6162;</li>
 </ol>
 <h1 id="docker&#x539F;&#x7406;">Docker&#x539F;&#x7406;</h1>
-<p>Linux&#x5BB9;&#x5668; Linux Containers,LXC</p>
+<p>&#x5BB9;&#x5668;&#x662F;&#x4E00;&#x79CD;&#x8F7B;&#x91CF;&#x7EA7;&#x865A;&#x62DF;&#x5316;&#x3002;</p>
 <blockquote>
 <p>&#x5BB9;&#x5668;&#x6709;&#x70B9;&#x50CF;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x80FD;&#x591F;&#x63D0;&#x4F9B;&#x865A;&#x62DF;&#x5316;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x4F46;&#x662F;&#x6210;&#x672C;&#x5F00;&#x9500;&#x5C0F;&#x5F97;&#x591A;</p>
 </blockquote>
-<p>Docker&#x5C5E;&#x4E8E;Linux&#x5BB9;&#x5668;&#x7684;&#x4E00;&#x79CD;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x6613;&#x7528;&#x7684;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x3002;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684;Linux&#x5BB9;&#x5668;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<p>Docker&#x5C5E;&#x4E8E;Linux&#x5BB9;&#x5668; Linux Containers,LXC&#x7684;&#x4E00;&#x79CD;&#x5C01;&#x88C5;&#xFF0C;&#x63D0;&#x4F9B;&#x7B80;&#x5355;&#x6613;&#x7528;&#x7684;&#x5BB9;&#x5668;&#x4F7F;&#x7528;&#x63A5;&#x53E3;&#x3002;&#x76EE;&#x524D;&#x6700;&#x6D41;&#x884C;&#x7684;Linux&#x5BB9;&#x5668;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<blockquote>
+<p>Docker,Build,Ship and Run Any App,Anywhere &#x4E00;&#x6B21;&#x5C01;&#x88C5;&#xFF0C;&#x5230;&#x5904;&#x8FD0;&#x884C;&#x3002;</p>
+</blockquote>
+<p>Docker&#x4E3A;&#x5E94;&#x7528;&#x7684;&#x5F00;&#x53D1;&#x3001;&#x8FD0;&#x884C;&#x548C;&#x90E8;&#x7F72;&#x63D0;&#x4F9B;&#x4E00;&#x7AD9;&#x5F0F;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;</p>
+<h2 id="&#x5BB9;&#x5668;&#x6280;&#x672F;">&#x5BB9;&#x5668;&#x6280;&#x672F;</h2>
+<p><img src="../assets/virtual-private-cloud-with-container-technologies-for-devops-9-638.jpg" alt=""></p>
+<h2 id="docker-&#x4E0E;&#x865A;&#x62DF;&#x673A;&#x7684;&#x6BD4;&#x8F83;">Docker &#x4E0E;&#x865A;&#x62DF;&#x673A;&#x7684;&#x6BD4;&#x8F83;</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:left">Docker</th>
+<th style="text-align:left">&#x865A;&#x62DF;&#x673A;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x901F;&#x5EA6;</td>
+<td style="text-align:left">&#x542F;&#x52A8;&#x548C;&#x505C;&#x6B62;&#x79D2;&#x7EA7;&#x5B9E;&#x73B0;</td>
+<td style="text-align:left">&#x9700;&#x8981;&#x6570;&#x5206;&#x949F;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x8D44;&#x6E90;</td>
+<td style="text-align:left">&#x8D44;&#x6E90;&#x9700;&#x6C42;&#x5F88;&#x5C11;,&#x4E00;&#x53F0;&#x4E3B;&#x673A;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x6570;&#x5343;&#x4E2A;Docker&#x5BB9;&#x5668;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x7248;&#x672C;&#x63A7;&#x5236;</td>
+<td style="text-align:left">Docker&#x901A;&#x8FC7;&#x7C7B;&#x4F3C;Git&#x8BBE;&#x8BA1;&#x7406;&#x5FF5;&#xFF0C;&#x65B9;&#x4FBF;&#x7528;&#x6237;&#x83B7;&#x53D6;&#x3001;&#x5206;&#x53D1;&#x548C;&#x66F4;&#x65B0;&#x5E94;&#x7528;&#x955C;&#x50CF;&#xFF0C;&#x5B58;&#x50A8;&#x590D;&#x7528;&#x3002;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x521B;&#x5EFA;</td>
+<td style="text-align:left">&#x53EF;&#x4EE5;&#x901A;&#x8FC7;Dockerfile&#x7075;&#x6D3B;&#x81EA;&#x52A8;&#x5316;&#x521B;&#x5EFA;&#x548C;&#x90E8;&#x7F72;&#xFF0C;&#x63D0;&#x9AD8;&#x5DE5;&#x4F5C;&#x6548;&#x7387;&#x3002;</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6D88;&#x8017;</td>
+<td style="text-align:left">Docker&#x9664;&#x4E86;&#x8FD0;&#x884C;&#x5176;&#x4E2D;&#x5E94;&#x7528;&#x5916;,&#x57FA;&#x672C;&#x4E0D;&#x6D88;&#x8017;&#x989D;&#x5916;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#xFF0C;&#x4FDD;&#x8BC1;&#x5E94;&#x7528;&#x6027;&#x80FD;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x7CFB;&#x7EDF;&#x5F00;&#x9500;&#x3002;</td>
+<td style="text-align:left">&#x8FD0;&#x884C;N&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x5E94;&#x7528;&#x5C31;&#x8981;&#x8D77;N&#x4E2A;&#x865A;&#x62DF;&#x673A;&#xFF0C;&#x800C;Docker&#x4E3B;&#x9700;&#x8981;&#x542F;&#x52A8;N&#x4E2A;&#x9694;&#x79BB;&#x7684;&quot;&#x5F88;&#x8584;&#x7684;&#x5BB9;&#x5668;&quot;&#xFF0C;&#x5E76;&#x5C06;&#x5E94;&#x7528;&#x653E;&#x8FDB;&#x5BB9;&#x5668;&#x5185;&#x5373;&#x53EF;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x7279;&#x6548;</th>
+<th style="text-align:left">&#x5BB9;&#x5668;</th>
+<th style="text-align:left">&#x865A;&#x62DF;&#x673A;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">&#x542F;&#x52A8;&#x901F;&#x5EA6;</td>
+<td style="text-align:left">&#x79D2;&#x7EA7;</td>
+<td style="text-align:left">&#x5206;&#x949F;&#x7EA7;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x6027;&#x80FD;</td>
+<td style="text-align:left">&#x63A5;&#x8FD1;&#x539F;&#x751F;</td>
+<td style="text-align:left">&#x8F83;&#x5F31;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x5185;&#x5B58;&#x4EE3;&#x4EF7;</td>
+<td style="text-align:left">&#x5F88;&#x5C0F;</td>
+<td style="text-align:left">&#x8F83;&#x591A;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x786C;&#x76D8;&#x4F7F;&#x7528;</td>
+<td style="text-align:left">MB</td>
+<td style="text-align:left">GB</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x8FD0;&#x884C;&#x5BC6;&#x5EA6;</td>
+<td style="text-align:left">&#x5355;&#x673A;&#x652F;&#x6301;&#x4E0A;&#x5343;&#x5BB9;&#x5668;</td>
+<td style="text-align:left">&#x4E00;&#x822C;&#x51E0;&#x5341;&#x4E2A;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x9694;&#x79BB;&#x6027;</td>
+<td style="text-align:left">&#x5B89;&#x5168;&#x9694;&#x79BB;</td>
+<td style="text-align:left">&#x5B8C;&#x5168;&#x9694;&#x79BB;</td>
+</tr>
+<tr>
+<td style="text-align:left">&#x8FC1;&#x79FB;&#x6027;</td>
+<td style="text-align:left">&#x4F18;&#x79C0;</td>
+<td style="text-align:left">&#x4E00;&#x822C;</td>
+</tr>
+</tbody>
+</table>
 <p>Docker &#x7684;&#x63A5;&#x53E3;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x521B;&#x5EFA;&#x548C;&#x4F7F;&#x7528;&#x5BB9;&#x5668;&#xFF0C;&#x628A;&#x81EA;&#x5DF1;&#x7684;&#x5E94;&#x7528;&#x653E;&#x5165;&#x5BB9;&#x5668;&#x3002;&#x5BB9;&#x5668;&#x8FD8;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x3001;&#x590D;&#x5236;&#x3001;&#x5206;&#x4EAB;&#x3001;&#x4FEE;&#x6539;&#xFF0C;&#x5C31;&#x50CF;&#x7BA1;&#x7406;&#x666E;&#x901A;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x6837;&#x3002;</p>
 <p>&#x53C2;&#x8003;&#x89C6;&#x9891;&#xFF1A;<a href="https://www.youtube.com/watch?v=YFl2mCHdv24" target="_blank">https://www.youtube.com/watch?v=YFl2mCHdv24</a></p>
 <p>&#x53C2;&#x8003;&#x6587;&#x7AE0;:<a href="http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html" target="_blank">http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html</a></p>
@@ -421,7 +556,7 @@ ADD [--chown=&lt;user&gt;:&lt;group&gt;] [&quot;&lt;src&gt;,...&lt;dest&gt;&quot
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Docker 入门","level":"2.1","depth":1,"next":{"title":"Docker 进阶","level":"2.2","depth":1,"path":"docker/advance.md","ref":"docker/advance.md","articles":[]},"previous":{"title":"\bOverView","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Jinx19's Blog":"http://Jinx19.github.io"}},"gitbook":"*"},"file":{"path":"docker/intro.md","mtime":"2018-08-02T07:06:04.870Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-02T07:06:45.711Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Docker 入门","level":"2.1","depth":1,"next":{"title":"Docker 进阶","level":"2.2","depth":1,"path":"docker/advance.md","ref":"docker/advance.md","articles":[]},"previous":{"title":"\bOverView","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toggle-chapters"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"links":{"sidebar":{"Jinx19's Blog":"http://Jinx19.github.io"}},"gitbook":"*"},"file":{"path":"docker/intro.md","mtime":"2018-08-08T10:55:28.762Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-08T14:05:49.924Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
