@@ -12,3 +12,11 @@ GitLab 在项目和系统级别上都支持钩子程序。 对任意级别，当
 
 [如何跟别人解释Gitlab？](https://about.gitlab.com/2016/11/30/how-to-explain-gitlab-to-anyone/)
 
+# GitLab CI
+
+GitLab CI\(持续集成\)服务是GitLab的一部分，它管理项目和用户界面，允许对每次提交进行单元测试，并在构建失败时发出警告信息。
+
+### 到底该如何理解Runner 
+
+
+
