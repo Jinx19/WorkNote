@@ -53,5 +53,8 @@ jq .. file.json
 
 [具体使用手册](https://stedolan.github.io/jq/manual/)
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/LMugvo5j5jl9EJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/btiernay/jq-json-like-a-boss" title="jq: JSON - Like a Boss" target="_blank">jq: JSON - Like a Boss</a> </strong> from <strong><a href="https://www.slideshare.net/btiernay" target="_blank">Bob Tiernay</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LMugvo5j5jl9EJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<div style="margin-bottom:5px">
+<strong><a href="//www.slideshare.net/btiernay/jq-json-like-a-boss" title="jq: JSON - Like a Boss" target="_blank">jq: JSON - Like a Boss
+</a></strong>from<strong><a href="https://www.slideshare.net/btiernay" target="_blank">Bob Tiernay</a></strong> </div>
 
