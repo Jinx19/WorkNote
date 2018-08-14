@@ -1,4 +1,4 @@
-# Linux 进阶
+#  Linux 进阶
 
 ## [jq](https://stedolan.github.io/jq/)
 
@@ -14,5 +14,42 @@ jq类似于JSON数据的sed——可以使用它对json进行切片、过滤、�
 
 ### jq如何使用？
 
+[命令行 JSON 处理工具 jq 的使用介绍](https://www.ibm.com/developerworks/cn/linux/1612_chengg_jq/index.html)
 
+[jqplay](https://jqplay.org/)
+
+安装 
+
+* mac` brew install jq`
+
+* linux `apt-get install jq`
+
+使用
+
+stdin -&gt; jq &lt;filter&gt; -&gt; stdout  
+
+jq &lt;filter&gt; file -&gt; stdout
+
+逐行输入
+
+* read from stdin
+* write to stdout
+
+curl -s  ... \| jq ...
+
+echo ... \| jq ...
+
+cat ... \| jq ...
+
+文件输入
+
+* read from file
+
+* write to stdout
+
+jq .. file.json
+
+`Usage: jq [options] <jq filter> [file...]`
+
+[具体使用手册](https://stedolan.github.io/jq/manual/)
 
