@@ -1,4 +1,4 @@
-#  Linux 进阶
+# Linux 进阶
 
 ## [jq](https://stedolan.github.io/jq/)
 
@@ -18,15 +18,15 @@ jq类似于JSON数据的sed——可以使用它对json进行切片、过滤、�
 
 [jqplay](https://jqplay.org/)
 
-安装 
+安装
 
-* mac` brew install jq`
+* mac`brew install jq`
 
 * linux `apt-get install jq`
 
 使用
 
-stdin -&gt; jq &lt;filter&gt; -&gt; stdout  
+stdin -&gt; jq &lt;filter&gt; -&gt; stdout
 
 jq &lt;filter&gt; file -&gt; stdout
 
@@ -52,4 +52,6 @@ jq .. file.json
 `Usage: jq [options] <jq filter> [file...]`
 
 [具体使用手册](https://stedolan.github.io/jq/manual/)
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LMugvo5j5jl9EJ" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/btiernay/jq-json-like-a-boss" title="jq: JSON - Like a Boss" target="_blank">jq: JSON - Like a Boss</a> </strong> from <strong><a href="https://www.slideshare.net/btiernay" target="_blank">Bob Tiernay</a></strong> </div>
 
